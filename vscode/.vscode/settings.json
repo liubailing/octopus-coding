@@ -1,0 +1,15 @@
+{
+	// 使能每一种语言默认格式化规则
+	"[html,css,less,javascript,javascriptreact,json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.tabSize": 4,
+	"eslint.validate": ["html", "javascript", "javascriptreact"],
+	"eslint.options": {
+		"extensinons": [".ts", ".js", ".tsx", ".jsx"]
+	},
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+	"git.ignoreLimitWarning": true
+}
