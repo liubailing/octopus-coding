@@ -1,5 +1,8 @@
 module.exports = {
-	extends: ['oclif', 'oclif-typescript'],
+	extends: [ 
+		'alloy',
+		'alloy/react',
+		'alloy/typescript',],
 	env: {
 		browser: true,
 		commonjs: true,
