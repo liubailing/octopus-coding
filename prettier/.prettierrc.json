@@ -12,5 +12,5 @@
 	"disableLanguages": ["vue"],
 	"jsxBracketSameLine": false,
 	"jsxSingleQuote": false,
-	"ignorePath": ".prettierignore"
+	"ignorePath": ".prettierignore",
 }
