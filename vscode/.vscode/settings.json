@@ -1,4 +1,14 @@
 {
+	// 控制已更新文件的自动保存。可在[此处](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save)阅读有关自动保存的详细信息。
+	//  - off: 永不自动保存更新后的文件。
+	//  - afterDelay: 当文件修改后的时间超过 `files.autoSaveDelay` 中配置的值时自动进行保存。
+	//  - onFocusChange: 编辑器失去焦点时自动保存更新后的文件。
+	//  - onWindowChange: 窗口失去焦点时自动保存更新后的文件。
+	"files.autoSave": "afterDelay",
+
+	// 控制自动保存已更新文件的延迟时间 (毫秒)。仅在 `files.autoSave` 设置为 `afterDelay` 时生效。
+	"files.autoSaveDelay": 3000,
+
 	// 使能每一种语言默认格式化规则
 	"[html]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -21,23 +31,7 @@
 		"extensinons": [".ts", ".js", ".tsx", ".jsx"]
 	},
 	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": true,
-		"eslint.validate": [
-			"javascript",
-			"javascriptreact",
-			{
-				"language": "vue",
-				"autoFix": true
-			},
-			{
-				"language": "typescript",
-				"autoFix": true
-			},
-			{
-				"language": "typescriptreact",
-				"autoFix": true
-			}
-		]
+		"source.fixAll.eslint": true
 	},
 	"git.ignoreLimitWarning": true
 }
